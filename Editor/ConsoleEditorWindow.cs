@@ -7,17 +7,11 @@ namespace Tactile.Console.Editor
     public class ConsoleEditorWindow : EditorWindow
     {
         private IMGUIConsole _imguiConsole;
-        private Console _console;
         
         private void OnEnable()
         {
-            _console = new Console();
-            _imguiConsole = new IMGUIConsole()
-            {
-                UseEditorGUI = true
-            };
+            _imguiConsole = new IMGUIConsole();
             _imguiConsole.OnRepaint += Repaint;
-
         }
 
         [MenuItem("Tactile/Console")]

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Tactile.Console.Utility;
+using UnityEngine;
 
 namespace Tactile.Console.Printing
 {

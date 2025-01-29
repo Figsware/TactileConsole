@@ -66,6 +66,12 @@ namespace Tactile.Console.Printing
             return this;
         }
 
+        public BasePrintBuilder AppendLine()
+        {
+            AppendString("\n");
+            return this;
+        }
+
         public BasePrintBuilder AppendObject(object obj)
         {
             switch (obj)

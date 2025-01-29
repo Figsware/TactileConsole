@@ -1,12 +1,11 @@
-﻿using System.Linq;
-using System.Text.RegularExpressions;
-
-namespace Tactile.Console.Commands
+﻿namespace Tactile.Console.Commands
 {
     public abstract class BaseCommand
     {
         public readonly string Name;
         public readonly string Description;
+        public BaseCommand ParentCommand { get; set; }
+        public virtual bool Hidden { get; set; } = false;
         
         protected BaseCommand(string name, string description)
         {

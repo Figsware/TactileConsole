@@ -29,8 +29,8 @@ namespace Tactile.Console.Commands
     public class Command<TFirst, TSecond>: BaseCommandWithParameters<TFirst, TSecond>
     {
         private readonly Action<Console, ParsedArguments> _execute;
-        public Command(string name, string description, Parameters.BaseParameter<TFirst> firstParameter, Parameters.BaseParameter<TSecond> secondParameter, Action<Console, ParsedArguments> execute) : base(name,
-            description, firstParameter, secondParameter)
+        public Command(string name, string description, Parameters.BaseParameter<TFirst> firstValueParameter, Parameters.BaseParameter<TSecond> secondParameter, Action<Console, ParsedArguments> execute) : base(name,
+            description, firstValueParameter, secondParameter)
         {
             _execute = execute;
         }

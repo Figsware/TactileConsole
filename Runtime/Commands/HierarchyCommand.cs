@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using Tactile.Console.Utility;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
